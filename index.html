@@ -5,6 +5,62 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3d Printing IXD</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            /*            box-sizing: border-box;*/
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333A4C;
+            background-color: #F9F9F9;
+        }
+
+        h2 {
+            font-weight: 400;
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        .header {
+            background-color: #EAEAEA;
+            width: 100vw;
+            height: 80vh;
+            padding: 10% 0 0 5%;
+        }
+
+        .title {
+            font-size: 10em;
+        }
+
+        .printers {
+            width: 90%;
+            margin: 0 auto;
+            padding: 10% 0;
+            text-align: center;
+        }
+
+        .printers-svg {
+            width: 20%;
+            margin: 2% 1%;
+        }
+
+        .printers-svg:hover {
+            border: #333A4C solid 3px;
+            /*            background-color: #cbd7f7;*/
+        }
+        
+        .occupied-text {
+            padding: 0 0 10% 0;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -13,6 +69,7 @@
             <h1 class="title">3D Printing in <span style="color:#A33641">IXD</span></h1>
         </div>
         <div class="printers">
+           <h1>Choose a printer below to reserve the time</h1>
             <img src="svg/1.svg" alt="" class="printers-svg" id="1">
             <img src="svg/2.svg" alt="" class="printers-svg" id="2">
             <img src="svg/3.svg" alt="" class="printers-svg" id="3">
@@ -20,6 +77,10 @@
             <img src="svg/5.svg" alt="" class="printers-svg" id="5">
             <img src="svg/6.svg" alt="" class="printers-svg" id="6">
             <img src="svg/7.svg" alt="" class="printers-svg" id="7">
+        </div>
+        <div class="occupied-text">
+            <h2>Printers occupied?</h2>
+            <h2><a href="https://fabrication.sheridanc.on.ca/servicedesk/tickets/new/3d_print">Print using the fabrication site.</a></h2>
         </div>
     </div>
 </body>

@@ -5,62 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3d Printing IXD</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            /*            box-sizing: border-box;*/
-            box-sizing: border-box;
-
-        }
-
-        body {
-            font-family: 'Montserrat', sans-serif;
-            color: #333A4C;
-            background-color: #F9F9F9;
-        }
-
-        h2 {
-            font-weight: 400;
-            text-align: center;
-            font-size: 1.5em;
-        }
-
-        .header {
-            background-color: #EAEAEA;
-            width: 100vw;
-            height: 80vh;
-            padding: 10% 0 0 5%;
-        }
-
-        .title {
-            font-size: 10em;
-        }
-
-        .printers {
-            width: 90%;
-            margin: 0 auto;
-            padding: 10% 0;
-            text-align: center;
-        }
-
-        .printers-svg {
-            width: 20%;
-            margin: 2% 1%;
-        }
-
-        .printers-svg:hover {
-            border: #333A4C solid 3px;
-            /*            background-color: #cbd7f7;*/
-        }
-        
-        .occupied-text {
-            padding: 0 0 10% 0;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -69,14 +14,40 @@
             <h1 class="title">3D Printing in <span style="color:#A33641">IXD</span></h1>
         </div>
         <div class="printers">
-           <h1>Choose a printer below to reserve the time</h1>
-            <img src="svg/1.svg" alt="" class="printers-svg" id="1">
-            <img src="svg/2.svg" alt="" class="printers-svg" id="2">
-            <img src="svg/3.svg" alt="" class="printers-svg" id="3">
-            <img src="svg/4.svg" alt="" class="printers-svg" id="4">
-            <img src="svg/5.svg" alt="" class="printers-svg" id="5">
-            <img src="svg/6.svg" alt="" class="printers-svg" id="6">
-            <img src="svg/7.svg" alt="" class="printers-svg" id="7">
+            <h1 class="printers-title">Choose a printer below to reserve the time</h1>
+            <div class="printer-container">
+                <img src="svg/1.svg" alt="" class="printers-svg" id="p1">
+                <h3 class="availability" id="availability-1">Available at 4:00 PM</h3>
+            </div>
+
+            <div class="printer-container">
+                <img src="svg/2.svg" alt="" class="printers-svg" id="p2">
+                <h3 class="availability" id="availability-2">Available at 4:00 PM</h3>
+            </div>
+
+            <div class="printer-container">
+                <img src="svg/3.svg" alt="" class="printers-svg" id="p3">
+                <h3 class="availability" id="availability-3">Available at 4:00 PM</h3>
+            </div>
+            <div class="printer-container">
+                <img src="svg/4.svg" alt="" class="printers-svg" id="p4">
+
+                <h3 class="availability" id="availability-4">Available at 4:00 PM</h3>
+            </div>
+            <div class="printer-container">
+                <img src="svg/5.svg" alt="" class="printers-svg" id="p5">
+
+                <h3 class="availability" id="availability-5">Available at 4:00 PM</h3>
+            </div>
+            <div class="printer-container">
+                <img src="svg/6.svg" alt="" class="printers-svg" id="p6">
+
+                <h3 class="availability" id="availability-6">Available at 4:00 PM</h3>
+            </div>
+            <div class="printer-container">
+                <img src="svg/7.svg" alt="" class="printers-svg" id="p7">
+                <h3 class="availability" id="availability-7">Available at 4:00 PM</h3>
+            </div>
         </div>
         <div class="occupied-text">
             <h2>Printers occupied?</h2>

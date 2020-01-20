@@ -1,0 +1,47 @@
+#submit-form {
+    width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    border: 0;
+    padding: 20px;
+}
+
+fieldset {
+    border: 0;
+}
+
+.input {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+select {
+    width: 100%;
+}
+
+input[type="number"] {
+    width: 18%;
+    font-size: 3em;
+    text-align: center;
+    float: none;
+}
+
+#duration-hours {
+    margin: 0 10% 0 20%;
+}
+
+#duration-minutes {
+    margin: 0 20% 0 10%;
+}
+
+button {
+    padding: 10px;
+    color: #fff;
+    background-color: #05AADD;
+    width: 100%;
+    font-size: 1.25em;
+    font-family: "Montserrat", sans-serif;
+}

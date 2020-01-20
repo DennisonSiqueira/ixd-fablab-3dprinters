@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d Printing IXD</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">3D Printing in <span style="color:#A33641">IXD</span></h1>
+        </div>
+        <div class="printers">
+<!--            <h1 class="printers-title">Click an available printer below to submit the time.</h1>-->
+            <h2 id="current-time"></h2>
+            <h3 id="reminder">A reminder to bring your own SD card!</h3>
+            <div class="printer-container" id="printer1">
+                <img src="svg/1.svg" alt="" class="printers-svg" id="p1">
+                <p class="availability-text" id="availability-1"></p>
+            </div>
+            <div class="printer-container" id="printer2">
+                <img src="svg/2.svg" alt="" class="printers-svg" id="p2">
+                <p class="availability-text" id="availability-2"></p>
+            </div>
+            <div class="printer-container" id="printer3">
+                <img src="svg/3.svg" alt="" class="printers-svg" id="p3">
+                <p class="availability-text" id="availability-3"></p>
+            </div>
+            <div class="printer-container" id="printer4">
+                <img src="svg/4.svg" alt="" class="printers-svg" id="p4">
+                <p class="availability-text" id="availability-4"></p>
+            </div>
+            <div class="printer-container" id="printer5">
+                <img src="svg/5.svg" alt="" class="printers-svg" id="p5">
+                <p class="availability-text" id="availability-5"></p>
+            </div>
+            <div class="printer-container" id="printer6">
+                <img src="svg/6.svg" alt="" class="printers-svg" id="p6">
+                <p class="availability-text" id="availability-6"></p>
+            </div>
+            <div class="printer-container" id="printer7">
+                <img src="svg/7.svg" alt="" class="printers-svg" id="p7">
+                <p class="availability-text" id="availability-7"></p>
+            </div>
+        </div>
+        <div class="occupied-text">
+            <h2>Printers occupied?</h2>
+            <h2><a href="https://fabrication.sheridanc.on.ca/servicedesk/tickets/new/3d_print">Print using the fabrication site.</a></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

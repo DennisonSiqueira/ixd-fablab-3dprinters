@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d Printing IXD</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../jobs.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="font-weight: 700; margin: 20px 0;">New 3d Print</h2>
+        <div class="form-container">
+            <form id="submit-form" method="post" accept-charset="utf-8" action="">
+                <fieldset>
+                    <div class="input text required"><label for="username">Username</label><br><input type="text" name="username" required="required" maxlength="8" id="username" /></div>
+                    <div class="input select"><label for="printer-id">Printer</label><br><select name="printer_id" id="printer-id">
+                            <option value="1">Doc</option>
+                            <option value="2">Dopey</option>
+                            <option value="3">Bashful</option>
+                            <option value="4">Grumpy</option>
+                            <option value="5">Sneezy</option>
+                            <option value="6">Sleepy</option>
+                            <option value="7">Happy</option>
+                        </select></div>
+                    <div class="input number required"><label for="duration" >Duration</label><br>
+                    <input type="number" name="durationH" required="required" min="0" id="durationH" value="0" onchange="calculateDuration();" /><span style="font-size: 5em;">:</span><input type="number" name="durationM" required="required" min="0" id="durationM" value="0" onchange="calculateDuration();"/></div>
+                    <div class="duration" id="totalDuration" style="display: none;"></div>
+                </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="../../calculator.js"></script>
+
+</body></html>

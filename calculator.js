@@ -8,7 +8,7 @@ function calculateDuration() {
     var a = parseInt(input_hours.value * 60);
     var b = parseInt(input_minutes.value);
 
-    total_duration = a + b;
+    total_duration = a + b + 30;
     
     console.log(total_duration);
     
